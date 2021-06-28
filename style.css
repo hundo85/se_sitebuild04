@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;900&display=swap");
+html {
+  height: calc(100vh - 1px);
+}
+
+body {
+  background-color: #1b47b2;
+  color: #efd592;
+}
+
+.menu {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+.wrapper {
+  height: 84vh;
+  margin: 8vh 40px;
+}
+
+.wrapper .content {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.wrapper .content .item-1, .wrapper .content .item-2, .wrapper .content .item-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper .content .item-1 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding: 20px 0 0 40px;
+}
+
+.wrapper .content .item-2 {
+  width: 50%;
+  padding: 20px 40px 0 40px;
+}
+
+.wrapper .content .item-3 {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+h1 {
+  margin: 20px 0 15px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #efd592;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  color: white;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 940px) {
+  .wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .item-1 {
+    width: 90% !important;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .item-2 {
+    width: 90% !important;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding: 20px 40px 40px 40px !important;
+  }
+  .item-3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 80% !important;
+    height: 300px !important;
+    margin: 40px auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
